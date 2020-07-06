@@ -1,0 +1,272 @@
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</head>
+
+<div class="panel panel-default">
+    <div class="panel-heading " id="panel_lowest">
+        <div id="tabs" #tabs>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#World" [ngClass]="{ 'active':activeTab==='World'}" data-toggle="tab"
+                        (click)="World('World')">World</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Sports" [ngClass]="{ 'active':activeTab==='Sports'}" data-toggle="tab"
+                        (click)="Sports('Sports')">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Arts" [ngClass]="{ 'active':activeTab==='Arts'}" data-toggle="tab"
+                        (click)="Arts('Arts')">Arts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#COVID19" [ngClass]="{ 'active':activeTab==='COVID19'}" data-toggle="tab"
+                        (click)="COVID19('COVID19')">COVID-19</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="panel-body tab-content">
+    <div class="tab-pane" id="World" [ngClass]="{ 'active':activeTab==='World'}">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="World-news-1" style="font-weight:bold ms;font-size:1.5em;">
+                </span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite00"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news1">
+                    <img id="World-news-1-image" alt="image1" width="300" height="200">
+                    <div id=World-news-1-content> </div>
+                    <a id=World-news-1-link href={{world_link_0}}>See Original Post</a>
+                    <div id=World-news-1-date> </div>
+                </table>
+
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="World-news-2" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite01"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news2">
+
+                    <img id="World-news-2-image" alt="image2" width="300" height="200">
+
+                    <div id=World-news-2-content></div>
+                    <a id=World-news-2-link href={{world_link_1}}>See Original Post</a>
+                    <div id=World-news-2-date> </div>
+                </table>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="World-news-3" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite02"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news3">
+
+                    <img id="World-news-3-image" alt="image3" width="300" height="200">
+
+                    <div id=World-news-3-content></div>
+                    <a id=World-news-3-link href={{world_link_2}}>See Original Post</a>
+                    <div id=World-news-3-date> </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Sports" [ngClass]="{ 'active':activeTab==='Sports'}">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="Sports-news-1" style="font-weight:bold ms;font-size:1.5em;">
+                </span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite10"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news1">
+                    <img id="Sports-news-1-image" alt="image11" width="300" height="200">
+                    <div id=Sports-news-1-content> </div>
+                    <a id=Sports-news-1-link href={{sports_link_0}}>See Original Post</a>
+                    <div id=Sports-news-1-date> </div>
+                </table>
+
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="Sports-news-2" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite11"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news2">
+                    <img id="Sports-news-2-image" alt="image12" width="300" height="200">
+                    <div id=Sports-news-2-content></div>
+                    <a id=Sports-news-2-link href={{sports_link_1}}>See Original Post</a>
+                    <div id=Sports-news-2-date> </div>
+                </table>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="Sports-news-3" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite12"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news3">
+                    <img id="Sports-news-3-image" alt="image13" width="300" height="200">
+                    <div id=Sports-news-3-content></div>
+                    <a id=Sports-news-3-link href={{sports_link_2}}>See Original Post</a>
+                    <div id=Sports-news-3-date> </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Arts" [ngClass]="{ 'active':activeTab==='Arts'}">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="Arts-news-1" style="font-weight:bold ms;font-size:1.5em;">
+                </span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite20"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news1">
+                    <img id="Arts-news-1-image" alt="image31" width="300" height="200">
+                    <div id=Arts-news-1-content> </div>
+                    <a id=Arts-news-1-link href={{arts_link_0}}>See Original Post</a>
+                    <div id=Arts-news-1-date> </div>
+                </table>
+
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="Arts-news-2" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite21"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news2">
+                    <img id="Arts-news-2-image" alt="image32" width="300" height="200">
+                    <div id=Arts-news-2-content></div>
+                    <a id=Arts-news-2-link href={{arts_link_1}}>See Original Post</a>
+                    <div id=Arts-news-2-date> </div>
+                </table>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="Arts-news-3" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite22"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news3">
+                    <img id="Arts-news-3-image" alt="image33" width="300" height="200">
+                    <div id=Arts-news-3-content></div>
+                    <a id=Arts-news-3-link href={{arts_link_2}}>See Original Post</a>
+                    <div id=Arts-news-3-date> </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="COVID19" [ngClass]="{ 'active':activeTab==='COVID19'}">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="COVID-19-news-1" style="font-weight:bold ms;font-size:1.5em;">
+                </span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite30"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news1">
+                    <img id="COVID-19-news-1-image" alt="image21" width="300" height="200">
+                    <div id=COVID-19-news-1-content> </div>
+                    <a id=COVID-19-news-1-link href={{covid_link_0}}>See Original Post</a>
+                    <div id=COVID-19-news-1-date> </div>
+                </table>
+
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="COVID-19-news-2" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite31"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news2">
+                    <img id="COVID-19-news-2-image" alt="image22" width="300" height="200">
+                    <div id=COVID-19-news-2-content></div>
+                    <a id=COVID-19-news-2-link href={{covid_link_1}}>See Original Post</a>
+                    <div id=COVID-19-news-2-date> </div>
+                </table>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span id="COVID-19-news-3" style="font-weight:bold ms;font-size:1.5em;"></span>
+                <div class="text-center padding-y-sm btn-lg btn-block">
+                    <input type="button" style="float:right" name="Favorite" id="Favorite32"
+                        value="Add to My Favorite News" class="btn btn-primary mt-8" onclick="addFavorite()" />
+                </div>
+            </div>
+            <div class="panel-body table-responsive">
+                <!--display news-->
+                <table class="news3">
+                    <img id="COVID-19-news-3-image" alt="image23" width="300" height="200">
+                    <div id=COVID-19-news-3-content></div>
+                    <a id=COVID-19-news-3-link href={{covid_link_2}}>See Original Post</a>
+                    <div id=COVID-19-news-3-date> </div>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
